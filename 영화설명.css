@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    width: 100vw; 
+    height: 108px;
+    display: flex;
+    border: 1px black solid;
+}
+
+header>div{
+    width: 20%;
+    border: 1px black solid;
+
+}
+
+nav{
+    width: 80%;
+    border: 1px black solid;
+}
+
+main{
+    width: 100vw; 
+    height: 3060px;
+    border: 1px black solid;
+    padding: 100px;
+}
+
+main>div{
+
+    padding: 45px 0px;
+}
+
+
+.movie{
+    height: 20%;
+    display: flex;
+}
+
+
+.movie>div:nth-child(1){
+    width: 30%;
+    border: 1px black solid;
+    background-image: url(이미지/영화\ 포스터.png);
+
+
+}
+
+
+.movie>div:nth-child(2){
+    width: 70%;
+    border: 1px black solid;
+    padding-left: 132px;
+}
+
+.movie_title{
+    display: flex;
+    height: 20%;
+}
+
+.movie_title>div:nth-child(1){
+    width: 10%;
+}
+
+.movie_title>div:nth-child(2){
+    width: 60%;
+}
+
+.movie_title>div:nth-child(3){
+    width: 30%;
+}
+
+
+.movie_summary{
+    height: 40%;
+    border: 1px black solid;
+    line-height: 3; /* 글자 높이 설정*/
+    font-size: 20px;
+    word-wrap: break-word; 
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3; /* 말줄임표 줄 위치 */
+    -webkit-box-orient: vertical; /* 플렉스 방향 가로로 설정 */
+    overflow: hidden;
+
+
+}
+
+.movie_description{
+    height: 40%;
+    display: flex;
+    border: 1px black solid;
+
+}
+
+
+.movie_description>div{
+    flex: 1px;
+
+    border: 1px black solid;
+}
+
+
+
+
+
+main>div:nth-child(2){
+    height: 20%;
+    border: 1px black solid;
+}
+
+
+.movie_Ticketing>div:nth-child(1){
+
+    height: 20%;
+}
+
+.movie_Ticketing>div:nth-child(2){
+
+    height: 80%;
+    display: flex;
+    
+}
+
+
+.Ticketing_img,.Ticketing_link{
+    width: 20%;
+   
+}
+
+.Ticketing_img>img{
+    
+    height: 123.43px;
+    width: 227.05px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    border: 1px black solid;
+
+
+}
+
+
+.Ticketing_address{
+    display: flex;
+    width: 40%;
+    border: 1px black solid;
+    flex-direction: column;
+    
+
+}
+
+
+.Ticketing_address>div{
+    flex: 1;
+    text-align: center;
+
+}
+
+.Ticketing_link{
+    display: flex;
+    flex-direction: column;
+}
+
+.Ticketing_link>div{
+
+    border: 1px black solid;
+    flex: 1;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+main>div:nth-child(3){
+    height: 40%;
+    border: 1px black solid;
+}
+
+
+main>div:nth-child(4){
+    height: 20%;
+    border: 1px black solid;
+}
