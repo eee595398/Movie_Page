@@ -179,6 +179,8 @@ main>div{
 
 .movie_description>div{
     flex: 1;
+    display: flex;
+    flex-direction: column;
     border: 1px black solid;
     
 }
@@ -187,7 +189,6 @@ main>div{
     border: 1px white solid;
     display: flex;
     flex: 1;
-    height: 33%;
     align-items: center;
    
 }
@@ -272,15 +273,17 @@ main>div{
 }
 
 .Ticketing_link{
+    display: flex;
+    flex-direction: column;
     width: 40%;
     border: 1px black solid;
+    
 }
 
 .Ticketing_link>a{
-
+    flex: 1;
     border: 1px black solid;
     display: flex;
-    height: 33%;
     justify-content: center;
     align-items: center;
     color: #6BB3F6;
