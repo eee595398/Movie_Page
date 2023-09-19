@@ -5,6 +5,8 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #101322;
+    color: #FFFFFF;
 }
 
 button {
@@ -18,16 +20,75 @@ header {
     border: 1px black solid;
 }
 
-header>div{
-    width: 20%;
-    border: 1px black solid;
+header>a{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
+
+
 
 nav{
     width: 80%;
     border: 1px black solid;
+    display: flex;
+    justify-content: center;
 }
+
+
+form fieldset{
+
+    display: flex;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    border-radius: 45px;
+    width: 60%;
+
+
+}
+
+
+
+form fieldset input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+
+
+
+header>div{
+    width: 20%;
+    display: flex;
+}
+
+
+header>div>div{
+    
+    flex: 1;
+    border: 1px white solid;
+   
+}
+
+
+#login_button{
+
+    height: 73px;
+    width: 160px;
+    border-radius: 20%;
+    font-size: 24px;
+    font-weight:bold;
+
+}
+
+
 
 main{
     width: 100vw; 
@@ -48,10 +109,11 @@ main>div{
 }
 
 
-.movie>div:nth-child(1){
+.movie_img{
     width: 30%;
     border: 1px black solid;
     background-image: url(이미지/영화\ 포스터.png);
+    background-size: 100% 100%;
 
 
 }
@@ -59,25 +121,36 @@ main>div{
 
 .movie>div:nth-child(2){
     width: 70%;
-    border: 1px black solid;
-    padding-left: 132px;
+    border: 1px white solid;
+    margin-left: 132px;
+    background-color: #383B3E;
 }
 
 .movie_title{
     display: flex;
     height: 20%;
+    border: 1px white solid;
 }
 
 .movie_title>div:nth-child(1){
     width: 10%;
+    background-image: url(이미지/Vector.png);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;/* 배경 이미지 1개 */
+    background-position: center;
 }
 
 .movie_title>div:nth-child(2){
     width: 60%;
+    font-size: 48.76px;
+    font-weight:bold;
+    display: flex;
+    align-items: center;
 }
 
 .movie_title>div:nth-child(3){
     width: 30%;
+
 }
 
 
@@ -105,24 +178,43 @@ main>div{
 
 
 .movie_description>div{
-    flex: 1px;
-
+    flex: 1;
     border: 1px black solid;
+    
+}
+
+.movie_description>div>div{
+    border: 1px white solid;
+    display: flex;
+    flex: 1;
+    height: 33%;
+    align-items: center;
+   
+}
+
+
+.movie_description>div>div>a{
+    color: #6BB3F6;
+    margin-left: 10px;
 }
 
 
 
 
 
-main>div:nth-child(2){
+.movie_Ticketing{
     height: 20%;
-    border: 1px black solid;
+    border: 1px white solid;
+    background-color: #383B3E;
 }
 
 
 .movie_Ticketing>div:nth-child(1){
 
     height: 20%;
+    font-size: 48.76px;
+    font-weight:bold;
+    margin-left: 60px;
 }
 
 .movie_Ticketing>div:nth-child(2){
@@ -133,12 +225,19 @@ main>div:nth-child(2){
 }
 
 
-.Ticketing_img,.Ticketing_link{
+.Ticketing_img{
     width: 20%;
-   
+    border: 1px black solid;
 }
 
-.Ticketing_img>img{
+
+.Ticketing_img>div{
+    border: 1px black solid;
+    justify-content: center;
+    display: flex;
+}
+
+.Ticketing_img>div>img{
     
     height: 123.43px;
     width: 227.05px;
@@ -165,40 +264,97 @@ main>div:nth-child(2){
 
 .Ticketing_address>div{
     flex: 1;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
 
 }
 
 .Ticketing_link{
+    width: 40%;
+    border: 1px black solid;
+}
+
+.Ticketing_link>a{
+
+    border: 1px black solid;
+    display: flex;
+    height: 33%;
+    justify-content: center;
+    align-items: center;
+    color: #6BB3F6;
+
+}
+
+
+
+
+
+
+
+
+.comment{
+    height: 40%;
+    border: 1px black solid;
+    background-color: #383B3E;
+    margin: 40px 0px;
+}
+
+
+.comment>div:nth-child(1){
+
+    height: 20%;
+    font-size: 50px;
+    font-weight:bold;
+    margin-left: 50px;
+
+
+}
+
+
+.comment>div:nth-child(2){
+
+    height: 40%;
+    
+    border: 1px black solid;
     display: flex;
     flex-direction: column;
 }
 
-.Ticketing_link>div{
 
-    border: 1px black solid;
+.user_comment>div{
+
     flex: 1;
-    text-align: center;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-main>div:nth-child(3){
-    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px black solid;
+   
+
+
 }
+
+
+
+
+
+
+.comment>div:nth-child(3){
+
+    height: 20%;
+}
+
+
+
+
+
+
+
 
 
 main>div:nth-child(4){
     height: 20%;
     border: 1px black solid;
+    background-color: #383B3E;
 }
